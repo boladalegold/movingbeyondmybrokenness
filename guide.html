@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Anchoring the Storm Training Guide + Companion Workbook">
+<meta property="og:description" content="Faith-grounded healing resources, books, and free weekly livestreams from Boladale Gold, MA, LCPC.">
+<meta property="og:image" content="https://movingbeyondmybrokenness.com/bundle.jpg">
+<title>Anchoring the Storm Training Guide</title>
+<meta name="description" content="A therapeutic, practical and spiritual training program for parents of teenagers living with anxiety and depression, by Boladale Gold, MA, LCPC.">
+<link rel="icon" href="emblem-sm.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Great+Vibes&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: the MBMB brand system — ivory ground, deep teal ink, gold leaf. The emblem leads the hero, a teal band carries the three pillars, the channel banner opens the livestream section, the portrait anchors About. Left-aligned editorial column. */
+:root{
+  --ivory:#F8F4EC;
+  --ivory-2:#EFE7D8;
+  --ink:#0E3A3F;
+  --ink-soft:#4C6668;
+  --teal:#0F4C52;
+  --teal-deep:#0A3438;
+  --gold:#A57A24;
+  --gold-bright:#D4A74A;
+  --line:#DED3BF;
+  --on-teal:#F8F1E2;
+  --cover-mbmb:#0F4C52;
+  --cover-storm:#1E3646;
+  --cover-clue:#C08E35;
+  --cover-gentle:#6F8A78;
+  --display:"Marcellus", "Trajan Pro", Georgia, serif;
+  --script:"Great Vibes", "Snell Roundhand", cursive;
+  --body:"Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+  --measure:62ch;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ivory:#092A2E; --ivory-2:#0F363B; --ink:#F3ECDD; --ink-soft:#B4C6C2;
+    --teal:#145C62; --teal-deep:#061F22; --gold:#D4A74A; --gold-bright:#E6C06D;
+    --line:#24494D; --on-teal:#F8F1E2;
+    --cover-mbmb:#145C62; --cover-storm:#24404F; --cover-clue:#B07F28; --cover-gentle:#5B7464;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ivory:#092A2E; --ivory-2:#0F363B; --ink:#F3ECDD; --ink-soft:#B4C6C2;
+  --teal:#145C62; --teal-deep:#061F22; --gold:#D4A74A; --gold-bright:#E6C06D;
+  --line:#24494D; --on-teal:#F8F1E2;
+  --cover-mbmb:#145C62; --cover-storm:#24404F; --cover-clue:#B07F28; --cover-gentle:#5B7464;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;padding-inline:clamp(16px,4vw,40px)}
+.wrap{max-width:1120px;margin-inline:auto}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0}
+p{margin:0}
+.script{font-family:var(--script);font-weight:400;color:var(--teal)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--ivory) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:calc(-1 * clamp(16px,4vw,40px));padding:10px clamp(16px,4vw,40px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-size:1.08rem;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:12px}
+.brand img{width:42px;height:42px}
+.nav{display:flex;gap:clamp(12px,2.4vw,28px);flex-wrap:wrap;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--ink-soft)}
+.nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(40px,7vw,88px) clamp(40px,6vw,72px)}
+.lockup{display:grid;gap:0}
+.lockup .over{font-family:var(--display);font-size:clamp(1.1rem,2.2vw,1.55rem);letter-spacing:.32em;color:var(--ink)}
+.lockup .script{font-size:clamp(3.6rem,9vw,6.6rem);line-height:1;margin-top:.08em}
+.rule{width:min(320px,70%);height:3px;margin-top:10px;background:linear-gradient(90deg,var(--gold),var(--gold-bright) 60%,transparent);border-radius:3px}
+.hero .lede{margin-top:26px;max-width:46ch;font-size:1.18rem;color:var(--ink-soft)}
+.hero .lede strong{color:var(--ink);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:.98rem;text-decoration:none;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-primary{background:var(--teal);color:var(--on-teal)}
+.btn-primary:hover{background:var(--teal-deep)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--ivory)}
+.btn-gold{background:var(--gold-bright);color:#0A2A2E}
+.btn-gold:hover{background:var(--gold)}
+.btn.soon{background:transparent;border:1.5px dashed var(--line);color:var(--ink-soft);cursor:default}
+.emblem{justify-self:center;width:min(100%,440px);aspect-ratio:1;border-radius:50%;filter:drop-shadow(0 24px 40px rgba(10,52,56,.35))}
+.verse{margin-top:28px;padding-left:16px;border-left:2px solid var(--gold);max-width:44ch;color:var(--ink-soft);font-style:italic}
+
+/* pillars band */
+.pillars{background:var(--teal);color:var(--on-teal);margin-inline:calc(-1 * clamp(16px,4vw,40px));padding:clamp(28px,4vw,40px) clamp(16px,4vw,40px)}
+.pillars .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.pillar{display:flex;align-items:center;gap:16px;min-width:0}
+.pillar svg{flex:none;width:44px;height:44px;stroke:var(--gold-bright);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.pillar b{display:block;font-family:var(--display);font-weight:400;font-size:1.3rem;letter-spacing:.04em;color:var(--gold-bright)}
+.pillar span{font-size:.95rem;opacity:.88}
+
+/* sections */
+section{padding-block:clamp(56px,8vw,96px)}
+section + section{border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:12px;max-width:var(--measure);margin-bottom:40px}
+.sec-head h2{font-size:clamp(2rem,4vw,2.9rem)}
+.sec-head p{color:var(--ink-soft)}
+
+/* shelf */
+.shelf{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,36px)}
+.book{display:flex;flex-direction:column;gap:14px;min-width:0}
+.cover{aspect-ratio:3/4;max-width:100%;display:flex;align-items:flex-end;justify-content:flex-start;border-bottom:2px solid var(--gold);padding-bottom:0}
+.cover img{max-height:100%;width:auto;max-width:100%;border-radius:2px 6px 6px 2px;box-shadow:0 18px 30px -16px rgba(10,52,56,.55),0 0 0 1px rgba(0,0,0,.06);transition:transform .25s}
+.book:hover .cover img{transform:translateY(-4px)}
+@media (prefers-reduced-motion: reduce){.book:hover .cover img{transform:none}}
+.book .for{font-size:.85rem;font-weight:600;color:var(--gold)}
+.book h3{font-size:1.32rem}
+.book .sub{font-size:.95rem;color:var(--ink-soft)}
+.book p.desc{font-size:.97rem}
+.book .btn{align-self:flex-start;margin-top:auto}
+
+/* resources */
+.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,32px)}
+.res{padding:clamp(24px,3vw,36px);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;gap:14px;min-width:0;background:var(--ivory)}
+.res.feature{background:var(--teal);color:var(--on-teal);border-color:var(--teal)}
+.res.feature .meta{color:var(--gold-bright)}
+.res h3{font-size:1.6rem}
+.res .meta{font-size:.92rem;color:var(--ink-soft)}
+.res ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:.97rem}
+.res .btn{align-self:flex-start;margin-top:auto}
+
+/* live */
+.banner{border-radius:16px;overflow:hidden;border:1px solid var(--line);margin-bottom:clamp(32px,5vw,56px);box-shadow:0 24px 50px -32px rgba(10,52,56,.6)}
+.banner img{width:100%;aspect-ratio:1672/410;object-fit:cover}
+.live{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.live-intro{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:start}
+.live-intro img{width:112px;height:112px;border-radius:50%;box-shadow:0 0 0 3px var(--gold)}
+.when{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.08}
+.when-sub{margin-top:12px;color:var(--ink-soft);max-width:46ch}
+.platforms{display:grid;gap:12px}
+.platform{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px;border:1px solid var(--line);border-radius:12px;text-decoration:none;transition:border-color .2s,background .2s}
+a.platform:hover{border-color:var(--gold);background:var(--ivory-2)}
+.platform b{font-weight:600}
+.platform span{font-size:.9rem;color:var(--ink-soft)}
+.free{margin-top:8px;font-size:.97rem;color:var(--ink-soft)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,64px);align-items:start}
+.portrait{border-radius:18px;overflow:hidden;box-shadow:0 0 0 1px var(--line),0 30px 50px -30px rgba(10,52,56,.6)}
+.portrait img{width:100%;aspect-ratio:720/791;object-fit:cover}
+.about .text{display:grid;gap:18px;max-width:var(--measure)}
+.about h2{font-size:clamp(2rem,4vw,2.9rem)}
+.about .creds{color:var(--gold);font-weight:600;margin-top:-8px}
+.about .pull{font-family:var(--display);font-size:clamp(1.3rem,2.2vw,1.7rem);line-height:1.35;border-left:2px solid var(--gold);padding-left:18px}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+
+footer{background:var(--teal-deep);color:var(--on-teal);margin-inline:calc(-1 * clamp(16px,4vw,40px));padding:48px clamp(16px,4vw,40px) 56px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.f-brand{display:flex;align-items:center;gap:16px}
+.f-brand img{width:72px;height:72px}
+.f-brand .script{color:var(--gold-bright);font-size:2rem;line-height:1}
+.f-brand small{display:block;font-size:.85rem;letter-spacing:.14em;opacity:.85;margin-top:6px}
+footer nav{display:flex;flex-wrap:wrap;gap:18px;font-size:.93rem}
+footer nav a{text-decoration:none;opacity:.85}
+footer nav a:hover{opacity:1;color:var(--gold-bright)}
+.copy{width:100%;font-size:.85rem;opacity:.7}
+
+@media (max-width:900px){
+  .shelf{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero,.live,.about{grid-template-columns:minmax(0,1fr)}
+  .emblem{order:-1;width:min(70%,300px);justify-self:start}
+  .portrait{max-width:420px}
+}
+@media (max-width:640px){
+  .resources,.pillars .wrap{grid-template-columns:minmax(0,1fr)}
+  .nav{display:none}
+  .banner img{aspect-ratio:16/7;object-position:20% 50%}
+}
+@media (max-width:420px){
+  .shelf{grid-template-columns:minmax(0,1fr)}
+  .cover{max-width:240px}
+  .live-intro{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+<style>body{margin:0}</style>
+<style>
+.g-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(40px,6vw,80px)}
+.g-kicker{font-weight:600;color:var(--gold);font-size:.95rem}
+.g-title{font-size:clamp(2.6rem,6vw,4.4rem);margin-top:10px}
+.g-sub{margin-top:16px;font-size:1.18rem;color:var(--ink-soft);max-width:44ch}
+.g-by{margin-top:12px;font-weight:600}
+.g-buy{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:28px}
+.g-buy-c{justify-content:center}
+.g-price{font-family:var(--display);font-size:2.2rem;color:var(--teal)}
+.g-btn{font-size:1.08rem;padding:15px 34px}
+.g-facts{margin-top:12px;font-size:.92rem;color:var(--ink-soft)}
+.g-bundle{width:100%;border-radius:16px;box-shadow:0 30px 60px -36px rgba(10,52,56,.6)}
+.g-open{border-top:1px solid var(--line)}
+.g-open h2{font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:24ch}
+.g-prose{display:grid;gap:16px;margin-top:20px;max-width:var(--measure);font-size:1.08rem}
+.g-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.g-card{padding:26px;border:1px solid var(--line);border-radius:14px;background:var(--ivory-2)}
+.g-card h3{font-size:1.4rem;color:var(--teal);margin-bottom:8px}
+.g-mods{list-style:none;counter-reset:m;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 36px;margin:0;padding:0}
+.g-mods li{counter-increment:m;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:16px;row-gap:4px;padding-block:14px;border-bottom:1px solid var(--line)}
+.g-mods li::before{content:counter(m,decimal-leading-zero);grid-row:span 2;font-family:var(--display);font-size:1.6rem;color:var(--gold);line-height:1.1}
+.g-mods b{font-weight:600;font-size:1.06rem}
+.g-mods span{color:var(--ink-soft);font-size:.97rem}
+.g-split,.g-author{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1.4fr);gap:clamp(24px,5vw,56px);align-items:center}
+.g-split img,.g-author img{width:100%;max-width:340px;border-radius:10px;box-shadow:0 24px 44px -28px rgba(10,52,56,.6)}
+.g-author img{border-radius:18px}
+.g-split h2,.g-two h2,.g-author h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}
+.g-lead{margin-top:8px;color:var(--gold);font-weight:600}
+.g-list{margin:16px 0 0;padding-left:1.2em;display:grid;gap:8px}
+.g-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,56px)}
+.g-note{margin-top:14px;color:var(--ink-soft);font-size:.95rem}
+.g-author div{display:grid;gap:14px;max-width:var(--measure)}
+.g-final{text-align:center}
+.g-quote{font-family:var(--display);font-size:clamp(1.25rem,2.4vw,1.6rem);max-width:40ch;margin:0 auto 22px;color:var(--teal)}
+.g-final h2{font-size:clamp(1.6rem,3vw,2.2rem);max-width:30ch;margin:0 auto}
+.g-disc{margin:28px auto 0;max-width:60ch;font-size:.85rem;color:var(--ink-soft)}
+@media (max-width:900px){.g-hero,.g-split,.g-author,.g-two{grid-template-columns:minmax(0,1fr)}.g-bundle{order:-1}.g-three{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:700px){.g-mods{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="emblem-sm.webp" alt="" width="42" height="42">Moving Beyond My Brokenness</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#books">Books</a>
+      <a href="index.html#resources">Resources</a>
+      <a href="index.html#live">Livestreams</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <div class="wrap g-hero">
+    <div class="g-hero-text">
+      <p class="g-kicker">Training Guide + Companion Workbook</p>
+      <h1 class="g-title">Anchoring the Storm</h1>
+      <p class="g-sub">A therapeutic, practical and spiritual training program for parents of teenagers living with anxiety and depression</p>
+      <p class="g-by">By Boladale Gold, MA, LCPC</p>
+      <div class="g-buy">
+        <span class="g-price">$29.99</span>
+        <a class="btn btn-primary g-btn payhip-buy-button" data-theme="none" data-product="HswOi" href="https://payhip.com/b/HswOi">Buy now</a>
+      </div>
+      <p class="g-facts">Instant download · 3 PDFs · more than 120 pages · Pay by card or PayPal</p>
+    </div>
+    <img class="g-bundle" src="bundle.jpg" width="1600" height="1200" alt="The Anchoring the Storm Training Guide Parts 1 and 2 and the Companion Workbook">
+  </div>
+
+  <div class="wrap">
+  <section class="g-open" aria-labelledby="open-h">
+    <h2 id="open-h">You did not cause this. And you don’t have to carry it alone.</h2>
+    <div class="g-prose">
+      <p>If your teenager is struggling with anxiety or depression, you already know the exhaustion that is hard to put into words. You lie awake listening for them. You read the mood of your house before you have had your coffee. You replay every conversation and wonder, <em>What did I do wrong?</em></p>
+      <p><em>Anchoring the Storm</em> was written for you: the parent who loves deeply, is trying hard, and is running on empty. It is a complete training program that helps you understand what your teen is facing, steady yourself first, and become the calm, informed anchor your family needs.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="pil-h">
+    <div class="sec-head"><h2 id="pil-h">Three pillars in every module</h2></div>
+    <div class="g-three">
+      <div class="g-card"><h3>The psychological</h3><p>What the research says is happening in your teen’s brain, and in yours.</p></div>
+      <div class="g-card"><h3>The practical</h3><p>Step-by-step tools and word-for-word scripts you can use tonight.</p></div>
+      <div class="g-card"><h3>The spiritual</h3><p>Prayers, lament, and faith-grounded encouragement for the long road.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="mod-h">
+    <div class="sec-head"><h2 id="mod-h">What you’ll learn</h2><p>Eight modules across two parts. Each can stand alone, so you can begin with whatever feels most urgent.</p></div>
+    <ol class="g-mods">
+      <li><b>Understanding What Your Teen Is Facing</b><span>How the adolescent brain works, the difference between sadness and depression, how anxiety hides behind “attitude,” and the warning signs that need professional help right away.</span></li>
+      <li><b>The Parent’s Inner World</b><span>Recognizing compassion fatigue, naming the grief no one talks about, and a personal first-aid kit for the moments you feel triggered.</span></li>
+      <li><b>Communication That Heals</b><span>What to say, what not to say, and the PACE approach that helps teens open up instead of shutting down.</span></li>
+      <li><b>Setting Limits Without Losing the Relationship</b><span>How to hold loving, firm boundaries with the LEAN method, with scripts like “I love you too much to let this one go.”</span></li>
+      <li><b>Caring for Yourself Without Guilt</b><span>Why your renewal is one of the most strategic investments in your teen’s recovery, and a weekly plan to make it happen.</span></li>
+      <li><b>Navigating the Mental Health System</b><span>Types of treatment and care, questions to ask providers and prescribers, and how to advocate for your teen at school.</span></li>
+      <li><b>Spiritual Anchors for the Long Journey</b><span>Holding on to faith when the storm doesn’t pass as quickly as you prayed, including how to write your own prayer of lament.</span></li>
+      <li><b>Building a Family That Heals Together</b><span>Creating a home where recovery can happen, caring for siblings and your marriage, and a vision for your family beyond this season.</span></li>
+    </ol>
+  </section>
+
+  <section class="g-split" aria-labelledby="wb-h">
+    <img src="cover-workbook.jpg" width="900" height="1165" alt="Cover of the Anchoring the Storm Companion Workbook" loading="lazy">
+    <div>
+      <h2 id="wb-h">Plus the Companion Workbook</h2>
+      <p class="g-lead">32 pages that turn reading into real change.</p>
+      <ul class="g-list">
+        <li>Self-assessments for stress, burnout, and compassion fatigue</li>
+        <li>A two-week observation log to share with your teen’s therapist or doctor</li>
+        <li>Practice pages for validation, limit-setting, and difficult conversations</li>
+        <li>An appointment-preparation sheet and a school advocacy plan</li>
+        <li>A family meeting planner and a five-year family vision exercise</li>
+        <li>Reflection and discussion questions for every module</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="who-h">
+    <div class="g-two">
+      <div>
+        <h2 id="who-h">Who it’s for</h2>
+        <ul class="g-list">
+          <li>Parents and caregivers of teens living with anxiety, depression, or both</li>
+          <li>Parents whose teen is already in therapy and who want to support that work at home</li>
+          <li>Churches, parenting classes, and small groups. Every module includes discussion questions.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>What you’ll receive</h2>
+        <ol class="g-list g-num">
+          <li>Training Guide, Part 1 (Modules 1–4)</li>
+          <li>Training Guide, Part 2 (Modules 5–8)</li>
+          <li>Companion Workbook</li>
+        </ol>
+        <p class="g-note">Read on any device, print the workbook to write in, or bring it to your counseling sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="g-author" aria-labelledby="auth-h">
+    <img src="portrait.webp" width="720" height="791" alt="Boladale Gold" loading="lazy">
+    <div>
+      <h2 id="auth-h">Created by a licensed clinician</h2>
+      <p>Boladale Gold, MA, LCPC, has worked in mental health for more than fifteen years, beginning with teenagers in residential treatment. There she saw how deeply a parent’s own wellbeing shapes a child’s recovery, and how healing in one generation opens the door for the next.</p>
+      <p>She leads Divine Touch Therapeutic Counseling and Mentoring Services and Moving Beyond My Brokenness International, bringing clinical care and faith to the same table.</p>
+    </div>
+  </section>
+
+  <section class="g-final" aria-labelledby="fin-h">
+    <p class="g-quote">“You cannot pour from an empty cup. This guide was written for the parent who is holding the light — even when your own flame is flickering.”</p>
+    <h2 id="fin-h">Begin today. One module, one tool, one honest step at a time.</h2>
+    <div class="g-buy g-buy-c">
+      <span class="g-price">$29.99</span>
+      <a class="btn btn-primary g-btn payhip-buy-button" data-theme="none" data-product="HswOi" href="https://payhip.com/b/HswOi">Buy now</a>
+    </div>
+    <p class="g-facts">Instant download · 3 PDFs · Pay by card or PayPal</p>
+    <p class="g-disc">Anchoring the Storm is an educational resource and does not replace professional mental health care. If your teen is in crisis, call or text 988 (Suicide &amp; Crisis Lifeline) or call 911.</p>
+  </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="f-brand">
+        <img src="emblem-sm.webp" width="72" height="72" alt="">
+        <div><span class="script">Let’s grow together.</span><small>FAITH. HEALING. GROWTH. PURPOSE.</small></div>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html#books">Books</a><a href="index.html#resources">Resources</a><a href="index.html#live">Livestreams</a><a href="index.html#about">About</a>
+      </nav>
+      <p class="copy">© 2026 Moving Beyond My Brokenness International</p>
+    </div>
+  </footer>
+</main>
+<script src="https://payhip.com/payhip.js"></script>
+</body>
+</html>
